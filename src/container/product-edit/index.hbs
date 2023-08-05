@@ -1,0 +1,41 @@
+<main>
+  
+  <h1 class="form_title">Редагування товару</h1>
+  <form method="POST" action="/product-edit">
+    <div class="card">
+      
+      <h2 class="product_title">{{isSearch}}</h2>
+
+      <div class="name_price_id">
+        <div class="form_field product_name">
+          <label for="name" class="form_label">Назва товару</label>
+          <input type="text" name="name" class="form_input" value="{{product.name}}">
+        </div>
+
+        <div class="form_field product_price">
+          <label for="price" class="form_label">Ціна</label>
+          <input type="number" name="price" class="form_input" value="{{product.price}}">
+        </div>
+
+        <div class="form_field product_id">
+          <label for="id" class="form_label">ID</label>
+          <input type="number" name="id" class="form_input" value="{{product.id}}" readonly>
+        </div>
+      </div>
+
+      <div class="form_field product_description">
+        <label for="description" class="form_label">Короткий опис товару</label>
+        <textarea name="description" rows="3">{{product.description}}</textarea>
+        <span>Відображається у картці товару</span>
+      </div>
+
+      <div class="buttons">
+        <button class="btn button_product_update">Зберегти оновлення</button>
+        <button class="btn button_product_delete"><a href="/product-delete?id={{product.id}}" class="a_delete">Видалити товар</a></button>
+      </div>
+      
+
+    </div>
+  </form>
+
+</main>

@@ -5,6 +5,7 @@
   gap: 32px;
 }
 .form__title {
+  color: blue;
   font-size: 20px;
   font-weight: bold;
   padding-bottom: 4px;
