@@ -1,0 +1,12 @@
+<div class="card">
+    <h2>{{data.name}}</h2> 
+    <div class="product_description">{{data.description}}</div>
+    <div class="product_id">ID: {{data.id}}</div>
+    <div class="price_edit">
+        <div class="product_price">{{data.price}}₴</div>
+        <div class="link_product_edit">
+            <a href="/product-edit?id={{data.id}}" class="a_edit">Редагувати</a>
+            {{!-- <a href="/product-delete?id={{data.id}}" class="a_delete">Видалити</a> --}}
+        </div>
+    </div>
+</div>
